@@ -15,3 +15,7 @@ function deleteFromObjectByKey(object, key){
   return testObject; //returns close object that has been modified
 }
 
+function destructivelyDeleteFromObjectByKey(object, key){
+  delete object[key];
+  return object;
+}
